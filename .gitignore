@@ -1,0 +1,14 @@
+/node_modules
+/.next
+/out
+/build
+.env*
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
+
+# Dev-tool artifacts, not part of the deployable app
+/skills
+/ui-ux-pro-max-skill
+/video
+/.claude
