@@ -1,6 +1,7 @@
 import { FREE_TRIAL } from "@/data/siteContent";
 import CtaButton from "./CtaButton";
 import Reveal from "./Reveal";
+import KvkkNote from "./KvkkNote";
 
 export default function FreeTrialCTA() {
   return (
@@ -20,6 +21,7 @@ export default function FreeTrialCTA() {
                   <CtaButton event="cta_click_free_trial" sourceSection="free_trial">
                     {FREE_TRIAL.cta}
                   </CtaButton>
+                  <KvkkNote className="mt-3" />
                 </div>
               </div>
 

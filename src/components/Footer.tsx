@@ -1,6 +1,7 @@
 import { FOOTER } from "@/data/siteContent";
 import { HERO } from "@/data/siteContent";
 import CtaButton from "./CtaButton";
+import KvkkNote from "./KvkkNote";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -22,6 +23,7 @@ export default function Footer() {
               <CtaButton event="cta_click_footer" sourceSection="footer">
                 {HERO.primaryCta}
               </CtaButton>
+              <KvkkNote className="mt-3 max-w-xs" />
             </div>
           </div>
 

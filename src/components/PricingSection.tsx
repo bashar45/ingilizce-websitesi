@@ -15,6 +15,7 @@ import { createWhatsAppLink } from "@/lib/whatsapp";
 import { track } from "@/lib/analytics";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
+import KvkkNote from "./KvkkNote";
 
 export default function PricingSection() {
   const [months, setMonths] = useState<Duration["months"]>(DEFAULT_DURATION);
@@ -88,6 +89,7 @@ export default function PricingSection() {
         <p className="mt-8 text-center text-sm text-muted">
           {PRICING_SECTION.note}
         </p>
+        <KvkkNote className="mt-2 text-center" />
       </div>
     </section>
   );

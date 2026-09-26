@@ -1,6 +1,7 @@
 import { HERO } from "@/data/siteContent";
 import CtaButton from "./CtaButton";
 import HeroForm from "./HeroForm";
+import KvkkNote from "./KvkkNote";
 
 export default function Hero() {
   return (
@@ -39,6 +40,7 @@ export default function Hero() {
           </div>
 
           <p className="mt-5 text-sm font-medium text-muted">{HERO.trustLine}</p>
+          <KvkkNote className="mt-2" />
 
           <ul className="mt-8 grid gap-x-6 gap-y-2 border-t border-line pt-6 text-sm text-ink-soft sm:grid-cols-3">
             {HERO.miniBullets.map((b) => (
@@ -50,7 +52,7 @@ export default function Hero() {
           </ul>
         </div>
 
-        {/* Right: WhatsApp trial card with mandatory KVKK consent */}
+        {/* Right: WhatsApp trial card */}
         <div className="lg:pl-4">
           <HeroForm />
         </div>

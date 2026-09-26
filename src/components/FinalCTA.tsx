@@ -1,6 +1,7 @@
 import { FINAL_CTA } from "@/data/siteContent";
 import CtaButton from "./CtaButton";
 import Reveal from "./Reveal";
+import KvkkNote from "./KvkkNote";
 
 export default function FinalCTA() {
   return (
@@ -19,6 +20,7 @@ export default function FinalCTA() {
             </CtaButton>
           </div>
           <p className="mt-5 text-sm text-paper/50">{FINAL_CTA.microcopy}</p>
+          <KvkkNote tone="dark" className="mt-2" />
         </Reveal>
       </div>
     </section>

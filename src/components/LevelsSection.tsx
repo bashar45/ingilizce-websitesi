@@ -6,6 +6,7 @@ import { createWhatsAppLink, levelWhatsAppMessage } from "@/lib/whatsapp";
 import { track } from "@/lib/analytics";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
+import KvkkNote from "./KvkkNote";
 
 export default function LevelsSection() {
   const core = LEVELS.filter((l) => l.group === "core");
@@ -43,6 +44,8 @@ export default function LevelsSection() {
             ))}
           </div>
         </div>
+
+        <KvkkNote className="mt-8 text-center" />
       </div>
     </section>
   );

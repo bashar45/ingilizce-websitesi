@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { HERO } from "@/data/siteContent";
 import { createWhatsAppLink } from "@/lib/whatsapp";
 import { track } from "@/lib/analytics";
+import KvkkNote from "./KvkkNote";
 
 export default function StickyMobileCTA() {
   const [visible, setVisible] = useState(false);
@@ -35,6 +36,7 @@ export default function StickyMobileCTA() {
       >
         {HERO.primaryCta}
       </a>
+      <KvkkNote className="mt-1.5 text-center !text-[11px]" />
     </div>
   );
 }
