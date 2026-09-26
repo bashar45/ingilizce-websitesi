@@ -8,6 +8,8 @@ import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 import KvkkNote from "./KvkkNote";
 
+
+
 export default function LevelsSection() {
   const core = LEVELS.filter((l) => l.group === "core");
   const exam = LEVELS.filter((l) => l.group === "exam");
@@ -58,11 +60,12 @@ function LevelCard({
   level: (typeof LEVELS)[number];
   exam?: boolean;
 }) {
+  const linkText = exam ? "Bu paketle ücretsiz dene" : "Bu seviyeyle ücretsiz dene";
   const message = levelWhatsAppMessage(level.name);
   const onClick = () =>
     track("cta_click_level_card", {
       source_section: "levels",
-      button_text: level.cta,
+      button_text: linkText,
       level_name: level.name,
     });
 
@@ -90,9 +93,10 @@ function LevelCard({
         target="_blank"
         rel="noopener noreferrer"
         onClick={onClick}
-        className="mt-5 inline-flex h-11 items-center justify-center rounded-pill bg-ink px-5 text-sm font-semibold text-surface transition-colors hover:bg-action-hover"
+        className="group mt-5 inline-flex w-fit items-center gap-1.5 text-sm font-semibold text-action-hover"
       >
-        {level.cta}
+        <span className="underline-offset-4 group-hover:underline">{linkText}</span>
+        <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-0.5">→</span>
       </a>
     </div>
   );
