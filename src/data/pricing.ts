@@ -63,15 +63,16 @@ export const TIERS: Tier[] = [
 
 export const PRICING_SECTION = {
   eyebrow: "Fiyatlar",
-  title: "Temponu seç, süreni seç.",
+  title: "Önce 3 gün ücretsiz dene. Beğenirsen paketini seç.",
   subtitle:
-    "Tüm paketler 3 gün ücretsiz denemeyle başlar. Deneme boyunca ödeme alınmaz; beğenirsen sana uyan paketle devam edersin.",
+    "Denemede ödeme alınmaz, kart istenmez. Deneme bitince devam etmek istersen aşağıdaki paketlerden birini WhatsApp üzerinden seçersin.",
+  cta: "3 gün ücretsiz dene",
   popularLabel: "En popüler",
-  note: "Fiyatlara KDV dahildir. Ödeme ve paket geçişi WhatsApp üzerinden yapılır.",
+  note: "Fiyatlara KDV dahildir. Deneme sonrası ödeme havale/EFT ile, WhatsApp üzerinden yapılır.",
 };
 
 export function planWhatsAppMessage(tier: Tier, months: Duration["months"]): string {
-  return `Merhaba, İngilizcemiz ${months} aylık, günde ${tier.words} kelimelik (${tier.name}) paketini almak istiyorum.`;
+  return `Merhaba, İngilizcemiz 3 günlük ücretsiz denemesine başlamak istiyorum. İlgilendiğim paket: ${months} aylık, günde ${tier.words} kelime (${tier.name}).`;
 }
 
 export function formatTL(value: number): string {

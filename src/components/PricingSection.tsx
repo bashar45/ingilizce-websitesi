@@ -189,7 +189,7 @@ function PlanCard({ tier, months }: { tier: Tier; months: Duration["months"] }) 
             : "bg-ink text-surface hover:bg-action-hover"
         }`}
       >
-        Bu paketi seç
+        {PRICING_SECTION.cta}
       </a>
     </div>
   );

@@ -34,14 +34,14 @@ export const metadata: Metadata = {
     title: "İngilizce kelimeleri WhatsApp'ta kullanarak öğren",
     description:
       "Yeni uygulama indirmeden, WhatsApp üzerinden günlük İngilizce kelime ve cümle pratiği yap. 3 gün ücretsiz dene.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "İngilizcemiz" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "İngilizcemiz" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "İngilizce kelimeleri WhatsApp'ta kullanarak öğren",
     description:
       "Yeni uygulama indirmeden, WhatsApp üzerinden günlük İngilizce kelime ve cümle pratiği yap. 3 gün ücretsiz dene.",
-    images: ["/og-image.png"],
+    images: ["/og-image.jpg"],
   },
   robots: { index: true, follow: true },
 };
