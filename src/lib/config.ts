@@ -14,4 +14,11 @@ export const SITE_CONFIG = {
   // PLACEHOLDER — fill before launch:
   ga4MeasurementId: "G-XXXXXXXXXX",
   founderName: "", // e.g. "Ad Soyad" — boş kalırsa kart ürün-odaklı gösterilir
+
+  // KVKK veri sorumlusu — /kvkk sayfasında gösterilir. Yayından önce doldurulmalı.
+  dataController: {
+    name: "İngilizcemiz.com", // şirket unvanı veya şahıs şirketi sahibinin adı soyadı
+    address: "", // açık adres
+    email: "inanb44@gmail.com", // KVKK başvuruları için e-posta
+  },
 } as const;
