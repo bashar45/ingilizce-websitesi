@@ -68,7 +68,7 @@ export const PRICING_SECTION = {
     "Denemede ödeme alınmaz, kart istenmez. Deneme bitince devam etmek istersen aşağıdaki paketlerden birini WhatsApp üzerinden seçersin.",
   cta: "3 gün ücretsiz dene",
   popularLabel: "En popüler",
-  note: "Fiyatlara KDV dahildir. Deneme sonrası ödeme havale/EFT ile, WhatsApp üzerinden yapılır.",
+  note: "Fiyatlara KDV dahildir. Deneme sonrası ödeme havale/EFT ile yapılır; açıklamaya WhatsApp numaranı yazman yeterli.",
 };
 
 export function planWhatsAppMessage(tier: Tier, months: Duration["months"]): string {

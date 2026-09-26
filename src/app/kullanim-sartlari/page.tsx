@@ -79,7 +79,7 @@ export default function TermsPage() {
 
       <Section title="4. Ödeme ve paketin başlaması">
         <ul>
-          <li>Ödemeler şu anda yalnızca banka havalesi / EFT ile alınır. Hesap bilgileri WhatsApp üzerinden paylaşılır.</li>
+          <li>Ödemeler şu anda yalnızca banka havalesi / EFT ile alınır. Hesap bilgileri WhatsApp üzerinden paylaşılır; ödemenin size ait olduğunu eşleştirebilmemiz için havale açıklamasına WhatsApp numaranızı yazmanız gerekir.</li>
           <li>Paketiniz, ödemeniz hesabımıza ulaşıp doğrulandıktan sonra başlar ve paket süresi bu tarihten itibaren işler.</li>
           <li>Paketler otomatik olarak yenilenmez. Süre sonunda devam etmek isterseniz yeni bir ödeme ile paketinizi uzatabilirsiniz.</li>
         </ul>
