@@ -98,33 +98,22 @@ export const HOW_IT_WORKS = {
   ],
 };
 
-export type ChatRole = "bot" | "user" | "feedback";
-export interface ChatLine {
-  role: ChatRole;
-  text: string;
-}
-
 export const DEMO = {
   title: "Bir günlük ders böyle görünür.",
   subtitle:
-    "Kelimeyi sadece okumazsın. Anlamını, kullanımını ve kendi cümleni aynı akışta görürsün.",
-  chat: [
-    { role: "bot", text: "Bugünün kelimesi: avoid\nAnlam: kaçınmak" },
-    {
-      role: "bot",
-      text: "Avoid, istemediğin veya zararlı olabilecek bir şeyden uzak durmak anlamında kullanılır.",
-    },
-    { role: "bot", text: "Example: I try to avoid checking my phone before sleep." },
-    { role: "bot", text: "Şimdi sen “avoid” ile kendi hayatından bir cümle yaz." },
-    { role: "user", text: "I avoid eating late at night." },
-    { role: "feedback", text: "Güzel cümle. Doğru kullanım: avoid + V-ing. Devam." },
-  ] as ChatLine[],
+    "Maket değil, gerçek bir ders: kelime görselleriyle gelir, sen cümleni yazarsın, düzeltmesi ve daha güçlü hâli sana geri gelir.",
   sideCards: [
-    { title: "Bağlam", body: "Kelimeyi tek başına değil, gerçek kullanım hissiyle görürsün." },
-    { title: "Örnek", body: "Her kelime için doğal bir örnek cümle gelir." },
     {
-      title: "Geri bildirim",
-      body: "Kendi cümleni yazdığında doğru kullanım için yönlendirme alırsın.",
+      title: "Görselle gelen kelime",
+      body: "Her kelime, anlamını küçük bir hikâyeyle anlatan görsellerle gelir; akılda kalması kolaylaşır.",
+    },
+    {
+      title: "Kullanım ve örnekler",
+      body: "Kelimenin hangi durumlarda kullanıldığını, Türkçe ve İngilizce örnek cümlelerle görürsün.",
+    },
+    {
+      title: "Cümlene özel geri bildirim",
+      body: "Yazdığın cümle düzeltilir, nedeni açıklanır ve “bir tık daha güçlü” bir alternatif önerilir.",
     },
   ],
 };

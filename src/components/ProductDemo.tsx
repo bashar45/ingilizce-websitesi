@@ -1,7 +1,7 @@
 import { DEMO } from "@/data/siteContent";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
-import ChatMockup from "./ChatMockup";
+import LessonVideo from "./LessonVideo";
 
 export default function ProductDemo() {
   return (
@@ -14,7 +14,7 @@ export default function ProductDemo() {
         />
         <div className="mt-12 grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
           <Reveal>
-            <ChatMockup />
+            <LessonVideo />
           </Reveal>
 
           <div className="space-y-4">
