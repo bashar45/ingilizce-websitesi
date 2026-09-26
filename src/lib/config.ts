@@ -7,12 +7,11 @@ export const SITE_CONFIG = {
   baseUrl: "https://ingilizcemiz.com",
 
   // REAL asset (provided).
-  whatsappNumber: "905533939518",
+  whatsappNumber: "905459760738",
   baseWhatsappMessage:
     "Merhaba, İngilizcemiz 3 günlük ücretsiz denemesine başlamak istiyorum.",
 
   // PLACEHOLDER — fill before launch:
   ga4MeasurementId: "G-XXXXXXXXXX",
   founderName: "", // e.g. "Ad Soyad" — boş kalırsa kart ürün-odaklı gösterilir
-  priceInfo: "", // boş → fiyat gizli, dürüst "deneme sonrası uygun plan" dili kullanılır
 } as const;

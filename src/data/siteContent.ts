@@ -230,6 +230,7 @@ export const NAV_LINKS = [
   { label: "Nasıl Çalışır?", href: "#nasil-calisir" },
   { label: "Örnek Ders", href: "#ornek-ders" },
   { label: "Seviyeler", href: "#seviyeler" },
+  { label: "Fiyatlar", href: "#fiyatlar" },
   { label: "SSS", href: "#sss" },
 ];
 
@@ -242,6 +243,7 @@ export const FOOTER = {
       links: [
         { label: "Nasıl Çalışır?", href: "#nasil-calisir" },
         { label: "Seviyeler", href: "#seviyeler" },
+        { label: "Fiyatlar", href: "#fiyatlar" },
         { label: "Örnek Ders", href: "#ornek-ders" },
         { label: "SSS", href: "#sss" },
       ],

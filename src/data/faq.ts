@@ -45,7 +45,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: "Ücretli plana nasıl geçiliyor?",
     answer:
-      "3 günlük deneme sonrası devam etmek istersen sana uygun bir plana geçebilirsin. Deneme boyunca hiçbir ödeme alınmaz; plan bilgileri denemenin sonunda WhatsApp üzerinden paylaşılır.",
+      "3 günlük deneme sonrası devam etmek istersen 1, 3 veya 6 aylık paketlerden birini; günde 2, 4 veya 6 kelimelik tempoyla seçebilirsin. Fiyatlar sayfadaki Fiyatlar bölümünde yer alır. Deneme boyunca hiçbir ödeme alınmaz; ödeme ve paket geçişi WhatsApp üzerinden yapılır.",
   },
   {
     question: "Verilerim güvende mi?",

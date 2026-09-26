@@ -8,6 +8,7 @@ import HowItWorks from "@/components/HowItWorks";
 import DailyFlow from "@/components/DailyFlow";
 import ProductDemo from "@/components/ProductDemo";
 import LevelsSection from "@/components/LevelsSection";
+import PricingSection from "@/components/PricingSection";
 import ComparisonSection from "@/components/ComparisonSection";
 import FreeTrialCTA from "@/components/FreeTrialCTA";
 import FounderStory from "@/components/FounderStory";
@@ -30,6 +31,7 @@ export default function Home() {
         <DailyFlow />
         <ProductDemo />
         <LevelsSection />
+        <PricingSection />
         <ComparisonSection />
         <FreeTrialCTA />
         <FounderStory />

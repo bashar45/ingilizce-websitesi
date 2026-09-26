@@ -2,14 +2,12 @@
 
 import { useState } from "react";
 import { track } from "@/lib/analytics";
-
-const FORM_URL =
-  "https://n8n.bilgem.cloud/form/c75774f9-fc89-4716-85a9-2376acf6a7a0";
+import CtaButton from "./CtaButton";
 
 /**
- * Hero conversion card: embeds the n8n application form.
- * A mandatory KVKK consent checkbox gates the form — the user cannot
- * interact with it until consent is given (overlay blocks pointer events).
+ * Hero conversion card: starts the free trial on WhatsApp.
+ * A mandatory KVKK consent checkbox gates the CTA — the WhatsApp link
+ * is not rendered until consent is given.
  */
 export default function HeroForm() {
   const [consent, setConsent] = useState(false);
@@ -44,34 +42,13 @@ export default function HeroForm() {
         3 gün ücretsiz denemeyi başlat
       </h2>
       <p className="mt-2 text-[15px] leading-relaxed text-muted">
-        Formu doldur, seviyene göre günlük İngilizce pratiğini WhatsApp&apos;tan
-        almaya hemen başla.
+        KVKK onayını ver, WhatsApp&apos;tan yaz; seviyene göre günlük İngilizce
+        pratiğin hemen başlasın.
       </p>
 
-      {/* Embedded n8n form — gated by consent */}
-      <div className="relative mt-5">
-        <iframe
-          src={FORM_URL}
-          title="İngilizcemiz ücretsiz deneme başvuru formu"
-          loading="lazy"
-          className={`h-[520px] w-full rounded-2xl border border-line bg-white transition-opacity duration-300 ${
-            consent
-              ? "opacity-100"
-              : "pointer-events-none select-none opacity-40"
-          }`}
-        />
-        {!consent && (
-          <div className="absolute inset-0 flex items-center justify-center rounded-2xl bg-surface/55 backdrop-blur-[1px]">
-            <span className="rounded-pill bg-ink px-4 py-2.5 text-center text-sm font-medium text-surface shadow-card">
-              Formu doldurmak için aşağıdaki KVKK onayını işaretle ↓
-            </span>
-          </div>
-        )}
-      </div>
-
-      {/* Mandatory KVKK consent — below the form */}
+      {/* Mandatory KVKK consent — gates the WhatsApp CTA */}
       <label
-        className={`mt-4 flex cursor-pointer items-start gap-3 rounded-2xl border p-4 transition-colors ${
+        className={`mt-5 flex cursor-pointer items-start gap-3 rounded-2xl border p-4 transition-colors ${
           consent ? "border-line bg-paper" : "border-action/40 bg-action-soft"
         }`}
       >
@@ -96,6 +73,24 @@ export default function HeroForm() {
           veriyorum. <span className="text-ember">*</span>
         </span>
       </label>
+
+      {consent ? (
+        <CtaButton
+          event="cta_click_hero_form"
+          sourceSection="hero_form"
+          className="mt-4 w-full"
+        >
+          WhatsApp&apos;tan Ücretsiz Başla
+        </CtaButton>
+      ) : (
+        <button
+          type="button"
+          disabled
+          className="mt-4 inline-flex h-[52px] w-full cursor-not-allowed items-center justify-center rounded-pill bg-line px-6 text-[15px] font-semibold text-muted"
+        >
+          Başlamak için KVKK onayını işaretle
+        </button>
+      )}
     </div>
   );
 }

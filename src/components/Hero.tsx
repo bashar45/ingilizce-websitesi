@@ -50,7 +50,7 @@ export default function Hero() {
           </ul>
         </div>
 
-        {/* Right: conversion form (n8n) with mandatory KVKK consent */}
+        {/* Right: WhatsApp trial card with mandatory KVKK consent */}
         <div className="lg:pl-4">
           <HeroForm />
         </div>
